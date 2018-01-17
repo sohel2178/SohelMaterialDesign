@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cpsdbd.sohelmaterialdesign.Activities.MyFabSheetActivity">
+
+
+    <!-- Your FAB implementation -->
+    <com.cpsdbd.sohelmaterialdesign.CustomView.Fab
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    <!-- Overlay that dims the screen -->
+    <com.gordonwong.materialsheetfab.DimOverlayFrameLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Circular reveal container for the sheet -->
+    <io.codetail.widget.RevealLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end|bottom"
+        android:orientation="vertical">
+
+        <!-- Sheet that contains your items -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/fab_sheet"
+            android:layout_width="250dp"
+            android:layout_height="300dp">
+
+            <LinearLayout
+                android:padding="@dimen/medium_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tt1"
+                    android:layout_marginBottom="@dimen/medium_padding">
+
+                    <net.steamcrafted.materialiconlib.MaterialIconView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        app:materialIcon="car"
+                        app:materialIconColor="#ff8800"
+                        app:materialIconSize="36dp"
+                        android:scaleType="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="This is Fragment A"
+                        android:textSize="18sp"
+                        android:paddingTop="@dimen/medium_padding"
+                        android:textColor="@color/colorPrimary"
+                        android:paddingBottom="@dimen/medium_padding"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tt2"
+                    android:layout_marginBottom="@dimen/medium_padding">
+
+                    <net.steamcrafted.materialiconlib.MaterialIconView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        app:materialIcon="car"
+                        app:materialIconColor="#ff8800"
+                        app:materialIconSize="36dp"
+                        android:scaleType="center"
+                        android:background="@android:color/darker_gray"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="This is Fragment A"
+                        android:textSize="18sp"
+                        android:paddingTop="@dimen/medium_padding"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:paddingBottom="@dimen/medium_padding"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!-- TODO: Put your sheet items here -->
+
+        </android.support.v7.widget.CardView>
+    </io.codetail.widget.RevealLinearLayout>
+
+</RelativeLayout>

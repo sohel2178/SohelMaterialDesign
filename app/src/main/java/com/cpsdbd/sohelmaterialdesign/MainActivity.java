@@ -8,6 +8,9 @@ import android.support.v7.widget.RecyclerView;
 
 import com.cpsdbd.sohelmaterialdesign.Activities.BaseActivity;
 import com.cpsdbd.sohelmaterialdesign.Activities.ExtendedFragmentActivity;
+import com.cpsdbd.sohelmaterialdesign.Activities.FabSheetActivity;
+import com.cpsdbd.sohelmaterialdesign.Activities.MyFabSheetActivity;
+import com.cpsdbd.sohelmaterialdesign.Activities.TapTargetActivity;
 import com.cpsdbd.sohelmaterialdesign.Adapter.ActivityAdapter;
 
 import java.util.ArrayList;
@@ -28,6 +31,10 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
         activityList = new ArrayList<>();
         activityList.add(new ExtendedFragmentActivity());
+        activityList.add(new FabSheetActivity());
+        activityList.add(new MyFabSheetActivity());
+        activityList.add(new TapTargetActivity());
+
 
         adapter = new ActivityAdapter(getApplicationContext());
 

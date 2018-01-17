@@ -16,7 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.ExtendedFragmentActivity"></activity>
+        <activity android:name=".Activities.ExtendedFragmentActivity" />
+        <activity android:name=".Activities.FabSheetActivity" />
+        <activity android:name=".Activities.MyFabSheetActivity" />
+        <activity android:name=".Activities.TapTargetActivity" />
+        <activity android:name=".SlidableActivity.SlidableActivity" />
+        <activity android:name=".Activities.FabRevealActivity"></activity>
     </application>
 
 </manifest>
